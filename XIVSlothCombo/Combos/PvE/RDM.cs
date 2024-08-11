@@ -413,11 +413,7 @@ namespace XIVSlothCombo.Combos.PvE
 
                 if (actionID is Jolt or Jolt2 or Jolt3)
                 {
-                    if (TraitLevelChecked(Traits.EnhancedAccelerationII)
-                        && HasEffect(Buffs.GrandImpactReady))
-                        return GrandImpact;
-
-                    //RDM_VERFIREVERSTONE
+                  //RDM_VERFIREVERSTONE
                     if (IsEnabled(CustomComboPreset.RDM_ST_FireStone)
                         && !HasEffect(Buffs.Acceleration)
                         && !HasEffect(Buffs.Dualcast))
@@ -438,6 +434,10 @@ namespace XIVSlothCombo.Combos.PvE
                         if (actions.useAero) return OriginalHook(Veraero);
                     }
                     //END_RDM_VERTHUNDERVERAERO
+                    
+                    if (TraitLevelChecked(Traits.EnhancedAccelerationII)
+                        && HasEffect(Buffs.GrandImpactReady))
+                        return GrandImpact;
 
                 }
 
