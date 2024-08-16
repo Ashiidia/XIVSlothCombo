@@ -438,7 +438,6 @@ namespace XIVSlothCombo.Combos.PvE
                     if (TraitLevelChecked(Traits.EnhancedAccelerationII)
                         && HasEffect(Buffs.GrandImpactReady))
                         return GrandImpact;
-
                 }
 
                 //NO_CONDITIONS_MET
